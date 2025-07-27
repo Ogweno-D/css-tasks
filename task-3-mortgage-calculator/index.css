@@ -1,3 +1,173 @@
-h1 {
-    color: orange;
+:root {
+    --color: #133040;
+    --color-b:#B4BA21;
+    --color-c:#E3F4FC;
+    --size: 16px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F4FC;
+    color: #282c30;
+}
+.task-header{
+    text-align: center;
+    margin: 2rem auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin: 1rem auto;
+    max-width:  800px;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calculator{
+    padding: 2em;
+}
+.calculator-top{
+    margin-bottom: 1rem;
+
+}
+.top-row{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+.calculator-top a{
+    text-decoration: underline;
+    justify-self: end;
+    color: #4c4e1e;
+}
+.result-card{
+
+    background-color: #133040;
+    color: white;
+    padding: 5em 2em;
+    text-align: center;
+    border-radius: 0 20px 20px 60px;
+}
+
+.calculator-row{
+    display: inline-block;
+    margin: 1rem auto;
+    position: relative;
+}
+.normal-input-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    width: 250px;
+    max-height: 45px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: .6rem auto;
+    background-color: white;
+}
+
+/* Mortgage columns*/
+.calculator-row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+}
+.other-input-grid{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+    width: 200px;
+    height:  40px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: .6rem auto;
+    background-color: white;
+}
+.row-label{
+    color: #8f999a;
+    padding: .5em 0;
+    margin: .3rem 0;
+    text-align: start;
+}
+
+input[type=number]{
+    width: 100%;
+    appearance: none;
+    margin: .5rem auto;
+    padding: .5em 6em;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-prefix, .input-suffix{
+    background-color: rgba(113, 177, 214, 0.5);
+    padding: 1em .5em;
+    vertical-align: middle;
+    color: #344249;
+}
+.input-suffix{
+    text-align: right;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mortgage-type-container{
+    margin-top: .5rem;
+}
+.mortgage-type-row{
+    border:1px solid #133040;
+    margin: .5rem auto;
+    padding: .5em;
+    border-radius: 5px;
+}
+.mortgage-type-label{
+    font-weight: 500;
+}
+
+.btn-grp{
+    margin-top:2rem;
+    padding:.8em;
+}
+.btn-grp a{
+    text-decoration: none;
+    background-color: #B4BA21;
+    padding: .8em 1em;
+    border-radius: 30px;
+    color: #133040;;
+}
+.btn-icon{
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+.result h2{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.result p{
+    font-size: .8rem;
+    text-align: center;
+    line-height: 1.2;
+    color: rgba(245, 245, 245, 0.6);
 }
