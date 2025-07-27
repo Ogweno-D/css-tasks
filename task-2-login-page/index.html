@@ -2,8 +2,68 @@
 <head >
     <title>Task 2 Log In Page</title>
     <link href="index.css" rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Task 2 Log In Page</h1>
+    <!--<h1>Task 2 Log In Page</h1>-->
+    <div class="container">
+        <div class="main-page">
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./assets/bng-logo.png" alt="Logo Image">
+                </div>
+                <div></div>
+                <footer>
+                    <i class="fa fa-copyright"></i>
+                    <span class="copyright"> All Rights Reserved</span>
+                </footer>
+            </div>
+            <div class="">
+                <img src="./assets/pic-2.jpg" class="main-image" alt="Image">
+            </div>
+        </div>
+
+        <!--  Login Form-->
+        <div class="form-container">
+            <form class="login-form">
+                <div class="login-form-top">
+                    <!-- Person Icon -->
+                    <i class="fa fa-user user-icon"></i>
+                    <span class="login-form-title">User Login</span>
+                </div>
+                <div class="login-form-body">
+                    <div class="login-form-group">
+                        <span class="login-form-group-title"> Enter your username and password </span>
+                        <div class="login-form-row">
+                            <label class="login-form-label">
+                                Username
+                            </label>
+                            <label class="form-input">
+                                <input type="text" placeholder="Enter Username">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="login-form-row">
+                            <label class="login-form-label">
+                                Password
+                            </label>
+                            <label class="form-input">
+                                <input type="password" placeholder="Enter Password">
+                                <span> <i class="fa-solid fa-eye eye-icon"></i> </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="login-form-footer">
+                        <a class="btn login-form-button">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
 </body>
 </html>

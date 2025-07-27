@@ -1,3 +1,128 @@
-h1 {
-    color: orange;
+:root {
+    --p-color:#15B92F;
+    --p-b-color: rgba(11, 22, 52, 0.5);
+    --p-c-color:#F9F9F8;
+    --p-c-c-color:#FAC022;
+    --p-c-c-c-color:#FFFAEC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-page{
+    display:grid;
+    grid-template-columns:350px 1fr;
+}
+.sidebar{
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+}
+.main-page footer{
+    background-color:white;
+    padding: 1em;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    /*opacity: 0.8;*/
+}
+
+.form-container{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 500px;
+    height: 380px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-top{
+    background-color: var(--p-color);
+    color: white;
+    font-weight: bold;
+}
+.login-form-title{
+    padding: 1em;
+    margin: .5rem;
+}
+.login-form-top i{
+    font-size:  1rem;
+    background-color: #0B1634;
+    color: white;
+    padding: 1em;
+}
+.login-form-body{
+    background-color: white;
+    margin:  0;
+    padding: 2em;
+}
+.login-form-group-title{
+    padding: 1em;
+    margin: 3rem auto;
+}
+.login-form-group-title span{
+    font-size: 1.2rem;
+    margin: 4rem auto;
+}
+.login-form-row{
+    margin: .8rem auto;
+}
+.login-form-label{
+    display: inline-block;
+    padding: 1em;
+    margin: 0.2rem;
+}
+
+input[type="text"],
+input[type="password"]{
+    border: none;
+    outline: none;
+    background-color: #FFFAEC;
+}
+
+.form-input{
+    width: 100%;
+    position: relative;
+    background-color: #FFFAEC;
+    border: 2px solid var(--p-b-color);
+    padding: .3em;
+    border-radius: 2px;
+}
+.eye-icon{
+    position: absolute;
+    top:20%;
+    right: .5em;
+    background-color: rgba(241, 206, 122, 0.2);
+    padding: .2em;
+
+}
+
+.login-form-footer{
+    text-align: right;
+}
+
+.btn{
+    display: inline-flex;
+    padding: .5em;
+    margin: 0.2rem;
+    border-radius: 5px;
+    outline: none;
+}
+.login-form-button{
+    background-color:rgba(11, 22, 52, 1) ;
+    color: white;
 }
