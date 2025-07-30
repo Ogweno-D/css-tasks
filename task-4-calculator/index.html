@@ -1,7 +1,8 @@
 <html lang="en">
 <head >
     <title>Task 4 Calculator</title>
-    <link href="index.css" rel="stylesheet">
+<!--    <link href="index.css" rel="stylesheet">-->
+    <link href="styles-flexbox.css" rel="stylesheet">
 </head>
 <body>
     <h1 class="task-header">Task 4 Calculator</h1>
@@ -9,20 +10,21 @@
     <div class="container">
         <div class="calculator">
             <div class="calculator-header">
-                <h1>Calc</h1>
+                <h1>calc</h1>
+                <div class="theme-switch">
+                    <div class="toggle-states">
+                        <span data-value="1" class="numbers">1</span>
+                        <span data-value="2" class="numbers">2</span>
+                        <span data-value="3" class="numbers">3</span>
+                    </div>
+                    <div class="toggle-container">
+                        <span>THEME</span>
+                        <div class="toggle" id="themeToggle">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="side-icons">
-
-                   <div>
-                       <span class="step"> 1 </span>
-                       <span class="step"> 2 </span>
-                       <span class="step"> 3 </span>
-                   </div>
-                    <span class="side-icon-slider">
-                        <label>
-                            <input class="" type="range" min="1" max="3" step="1" value="1" />
-                        </label>
-                    </span>
                 </div>
             </div>
 
@@ -43,7 +45,7 @@
                     <span class="action-sign"> + </span>
                 </div>
                 <div class="calculator-row">
-                    <span class="number"> 1 </span>
+                    <span class="number active"> 1 </span>
                     <span class="number"> 2 </span>
                     <span class="number"> 3 </span>
                     <span class="action-sign"> - </span>
@@ -61,6 +63,6 @@
             </div>
         </div>
 
-    </div>
+<script src="main.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ h1{
     align-items: center;
 }
 .task-header{
-   text-align: center;
+    text-align: center;
     margin: 3rem auto;
     color:white;
 }
@@ -35,13 +35,13 @@ h1{
     text-align: center;
 }
 
-/* Using Grid */
-
+/* Using Flexbox*/
 .calculator-header{
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin: 1rem auto;
+    margin: .5rem auto;
 }
 .calculator-header h1{
     justify-self: start;
@@ -128,53 +128,56 @@ h1{
 
 .calculator-body{
     background-color: #191F30;
-    padding: .5em;
+    padding: .8em;
     border-radius: 4px;
 
 }
 .calculator-row{
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .number{
     background-color: #eae3e3;
-    margin: .5rem;
-    padding: .5em;
+    padding: .6em 1.3em;
     border-radius: 4px;
     box-shadow: 0 3px #bdbdbd ;
     font-weight: 500;
-    font-size: 1.2rem;
-
+    font-size: 1rem;
 }
 .action-sign{
     background-color: #eae3e3;
-    margin: .6rem;
-    padding: .5em;
     border-radius: 4px;
-    box-shadow: 0 3px #bdbdbd ;
-    font-weight: 500;
+    padding: .6em 1em;
+    margin: .5rem;
     font-size: 1.2rem;
+    box-shadow: 0 3px #bdbdbd ;
+
 }
 .action-name{
-    color: #ffffff;
+    color: white;
     background-color: rgba(113, 123, 205, 0.4);
     border-radius: 4px;
     margin: .6rem;
     padding: .5em;
-    box-shadow: 0 3px rgba(113, 123, 205, 0.2);
-    font-weight: 500;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 .action-result{
-    font-size: 1.2rem;
     background-color: red;
     color: white;
     margin: .6rem;
     padding: .5em;
     border-radius: 4px;
-    box-shadow: 0 3px rgba(255, 0, 0, 0.89);
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .calculator-footer-row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+.calculator-footer-row > *{
+    flex: 1;
 }
