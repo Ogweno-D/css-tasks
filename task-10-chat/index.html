@@ -1,9 +1,327 @@
 <html lang="en">
 <head >
-    <title>Task Heading</title>
+    <title>Task 10 Chat Interface</title>
     <link href="index.css" rel="stylesheet">
+    <link href="../css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task Heading</h1>
+    <main>
+        <header>
+            <div class="logo">
+                <img src="" alt="Logo">
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <label>
+                    <input type="text" placeholder="Search">
+                </label>
+            </div>
+            <div >
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                    <a href="#"> Create new </a>
+                </button>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-circle-user">
+                </i>
+                <i class="fa-solid fa-user-edit"></i>
+
+                <p> Julian H.</p>
+                <div></div>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </header>
+        <div class="main-container">
+            <div class="side-nav">
+                <div class="side-nav-header">
+                    <i class="fa-solid fa-user-edit"></i>
+                    Fintory
+                </div>
+                <div class="side-nav-list">
+                    <div class="side-nav-item">
+                        <i class="fa-solid fa-dashboard"></i>
+                        Dashboard
+                    </div>
+                    <div class="side-nav-item">
+                        <i class="fa-solid fa-newspaper"></i>
+                        Jobs
+                    </div>
+                    <div class="side-nav-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        Candidates
+                    </div>
+                    <div class="side-nav-item">
+                        <i class="fa-solid fa-message"></i>
+                        Messages
+                    </div>
+                    <div class="side-nav-item">
+                        <i class="fa-solid fa-building"></i>
+                        Company
+                    </div>
+                    <div class="side-nav-item">
+                        <i class="fa-solid fa-cogs"></i>
+                        Settings
+                    </div>
+                </div>
+            </div>
+            <div class="message-list">
+                <div class="messages-header">
+                    <div>
+                        <h3>Messages</h3>
+                        <p class="messages-count"> 25</p>
+                    </div>
+                    <div>
+                        <label>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" placeholder="Search">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="selectMsg" ></label>
+                        <select name="messages" id="selectMsg" >
+                            <option value="" disabled selected>All Messages</option>
+                            <option value="1"> Unread </option>
+                            <option value="2"> Sent </option>
+                            <option value="3"> Received </option>
+                        </select>
+                    </div>
+                    <div class="messages-list">
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-item-header">
+                                <div class="message-item-avatar">
+                                    <i class="fa-solid fa-dot-circle"></i>
+                                    <img src="" alt="Avatar" class="message-item-avatar">
+                                </div>
+                                <div class="message-sender-info">
+                                    <p> Julian H.</p>
+                                    <p> applied for <span> UI/UX Designer</span></p>
+                                </div>
+                                <div class="message-time">
+                                    2hrs ago
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                Julian Herbst: Hi, I have a quick question regarding my application on the open..
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="chat-message">
+                <div class="chat-message-header">
+                    <div class="chat-message-user">
+                        <p> Julian Herbst</p>
+                        <p> Applied for <span> UI/UX Designer </span></p>
+                    </div>
+                    <div class="chat-message-actions">
+                        <button class="chat-message-action">
+                            <a href="#" class="btn">View Profile </a>
+                        </button>
+                        <label>
+                            <select class="chat-message-action">
+                                <option value="" disabled selected>Applied</option>
+                                <option value="1"> Unread </option>
+                                <option value="2"> Sent </option>
+                            </select>
+                        </label>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-times"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="chat-message-content">
+                    <div class="chat-message-time">
+                        <p> 09.03.20</p>
+                    </div>
+                    <div class="chat-message-message-one">
+                        <div class="chat-message-avatar">
+                            <img src="" alt="Avatar" class="chat-message-avatar">
+                        </div>
+                        <div class="chat-message-body">
+                            <h3>Julian Herbst</h3>
+                            <p> Hi Lena, I have a quick question regarding my application on the open position, UI/UX Designer":</p>
+                            <p> How long does it usually take for you to review an application? I have some options right now,
+                                but I would love to consider your company as well but I have had no response since I applied.
+                                Please just give me a quick message
+                            </p>
+
+                            <p>
+                                Thanks and best regards,
+                                Julian Herbst.
+                            </p>
+                        </div>
+                        <p> Message sent 1 week ago</p>
+                    </div>
+                    <div class="chat-message-time">
+                        <p> 09.03.20</p>
+                    </div>
+                    <div class="chat-message-message-two">
+                        <div class="chat-message-body">
+                            <h3>Hi Julian,</h3>
+                            <p> Sorry fot the delayed response but we are currently really busy screening a lot of new candidates.
+                                So to answer your question: Usually we need around 1 week to review the applications and I just took
+                                a look at yours.
+                            </p>
+                            <p>
+                                We like what we see and would like to send you a Design Challenge - that's the way we see how qualified you are.
+                                The timeframe is a normal working day(-8hrs).
+                            </p>
+
+                            <p>
+                                Please finish it within the next 7 days. If you have any questions feel free to message me here.
+                            </p>
+                        </div>
+                        <div class="chat-message-avatar">
+                            <img src="" alt="Avatar" class="chat-message-avatar">
+                        </div>
+                        <p> Message sent 1 week ago</p>
+                    </div>
+
+                    <div class="message-box">
+                        <label>
+                            <input type="text" placeholder="Write your message">
+                        </label>
+                        <div class="message-actions">
+                            <div class="format-actions">
+                                <i class="fa-solid fa-link"></i>
+                                <i class="fa-solid fa-bold"></i>
+                                <i class="fa-solid fa-italic"></i>
+                                <i class="fa-solid fa-list-ul"></i>
+                                <i class="fa-solid fa-list-ol"></i>
+                                <i class="fa-solid fa-strikethrough"></i>
+                                <i class="fa-solid fa-eraser"></i>
+                            </div>
+                            <div class="attachment-actions">
+                                <i class="fa-solid fa-smile"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                                <button class="chat-message-action">
+                                    <a href="#" class="btn">
+                                        <label>
+                                            <select class="chat-message-action">
+                                                <option value="" disabled selected>Send</option>
+                                                <option value="1"> Unread </option>
+                                                <option value="2"> Sent </option>
+                                            </select>
+                                        </label>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
