@@ -4,106 +4,120 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="task-header">Task 3 Mortgage Calculator</h1>
-    <div class="container">
-        <div class="calculator">
-            <div class="calculator-top">
-                <div class="top-row">
-                    <strong >Mortgage Calculator </strong>
-                    <a> Clear all</a>
-                </div>
-
-            </div>
-            <div class="calculator-body">
-                <form>
-                    <div class="calculator-row">
-                        <div>
-                            <label class="row-label">
-                                Mortgage Amount
-                            </label>
-                        </div>
-                        <div class="normal-input-grid">
-                            <span class="input-prefix"> E </span>
-                            <label>
-                                <input type="number">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="calculator-row-2">
-                        <div class="mortgage-terms">
-                            <label class="row-label">
-                                Mortgage Term
-                            </label>
-                            <div class="other-input-grid">
-                                <label>
-                                    <input type="number"  class="right-placeholder">
-                                </label>
-                                <span class="input-suffix"> years</span>
-                            </div>
-
-                        </div>
-                        <div class="mortgage-interest-rate">
-                            <label class="row-label">
-                                Interest Rate
-                            </label>
-                            <div class="other-input-grid">
-                                <label>
-                                    <input type="number" class="right-placeholder">
-                                </label>
-                                <span class="input-suffix"> %</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div>
-                        <label class="row-label">
-                            Mortgage Type
-                        </label>
-
-                        <div class="mortgage-type-container">
-                            <div class="mortgage-type-row">
-                                <label>
-                                    <input type="radio" name="repayment" id="repayment">
-                                </label>
-                                <label class="mortgage-type-label" for="repayment">
-                                    Repayment
-                                </label>
-                            </div>
-
-                            <div class="mortgage-type-row">
-                                <label>
-                                    <input type="radio" name="interest" id="interest">
-                                </label>
-                                <label class="mortgage-type-label" for="interest">
-                                    Interest Only
-                                </label>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="btn-grp">
-                        <a href="" class="btn">
-                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M5 2C3.89 2 3 2.89 3 4v16c0 1.1.89 2 2 2h14a2 2 0 0 0 2-2V4c0-1.11-.9-2-2-2H5zm0 2h14v4H5V4zm0 6h14v10H5V10zm2 2v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm-8 4v2h2v-2H7zm4 0v2h2v-2h-2z"/>
-                            </svg>
-                              Calculate Repayments
-                        </a>
-                    </div>
-                </form>
-            </div>
-
+    <div class="task-header">
+        <h1 >Task 3 Mortgage Calculator</h1>
+        <div class="">
+            <h2> Click here to calculate your mortgage payments</h2>
+            <button id="openModalBtn" class="modal-btn"> Calculate </button>
         </div>
-        <div class="result-card">
-            <div class="logo">
-                <img src="./assets/logo.png" alt="svg">
-            </div>
-            <div class="result">
-                <h2> Results shown here</h2>
-                <p> Complete the form and click "calculate repayments" to see what your monthly payments would be</p>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close-btn">&times;</span>
+            <div class="container">
+                <div class="calculator">
+                    <div class="calculator-top">
+                        <div class="top-row">
+                            <strong >Mortgage Calculator </strong>
+                            <a> Clear all</a>
+                        </div>
+
+                    </div>
+                    <div class="calculator-body">
+                        <form>
+                            <div class="calculator-row">
+                                <div>
+                                    <label class="row-label">
+                                        Mortgage Amount
+                                    </label>
+                                </div>
+                                <div class="normal-input-grid">
+                                    <span class="input-prefix"> E </span>
+                                    <label>
+                                        <input type="number">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="calculator-row-2">
+                                <div class="mortgage-terms">
+                                    <label class="row-label">
+                                        Mortgage Term
+                                    </label>
+                                    <div class="other-input-grid">
+                                        <label>
+                                            <input type="number"  class="right-placeholder">
+                                        </label>
+                                        <span class="input-suffix"> years</span>
+                                    </div>
+
+                                </div>
+                                <div class="mortgage-interest-rate">
+                                    <label class="row-label">
+                                        Interest Rate
+                                    </label>
+                                    <div class="other-input-grid">
+                                        <label>
+                                            <input type="number" class="right-placeholder">
+                                        </label>
+                                        <span class="input-suffix"> %</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div>
+                                <label class="row-label">
+                                    Mortgage Type
+                                </label>
+
+                                <div class="mortgage-type-container">
+                                    <div class="mortgage-type-row">
+                                        <label>
+                                            <input type="radio" name="repayment" id="repayment">
+                                        </label>
+                                        <label class="mortgage-type-label" for="repayment">
+                                            Repayment
+                                        </label>
+                                    </div>
+
+                                    <div class="mortgage-type-row">
+                                        <label>
+                                            <input type="radio" name="interest" id="interest" class="radio-btn">
+                                        </label>
+                                        <label class="mortgage-type-label" for="interest">
+                                            Interest Only
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="btn-grp">
+                                <a href="" class="btn">
+                                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 2C3.89 2 3 2.89 3 4v16c0 1.1.89 2 2 2h14a2 2 0 0 0 2-2V4c0-1.11-.9-2-2-2H5zm0 2h14v4H5V4zm0 6h14v10H5V10zm2 2v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm-8 4v2h2v-2H7zm4 0v2h2v-2h-2z"/>
+                                    </svg>
+                                    Calculate Repayments
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="result-card">
+                    <div class="logo">
+                        <img src="./assets/logo.png" alt="svg">
+                    </div>
+                    <div class="result">
+                        <h2> Results shown here</h2>
+                        <p> Complete the form and click "calculate repayments" to see what your monthly payments would be</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+<script src="main.js"></script>
 </body>
 </html>
