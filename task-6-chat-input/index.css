@@ -1,3 +1,61 @@
-h1 {
-    color: orange;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lexend Deca", sans-serif;
+    font-size:16px;
+    height:100vh;
+    width:100%;
+
+}
+
+.container{
+    max-width: 800px;
+    margin: 2rem     auto;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+.chat-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input i,
+.chat-input .icon {
+    font-size: 24px;
+    color: hsla(205 100% 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-input .icon svg {
+    display: block;
+}
+
+.input-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border-radius: 20px;
+    background: #f9f9f9;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: .2em .5em;
+    flex: 1;
+    background: transparent;
+    font-size: 16px;
+}
+
+.input-container i {
+    margin-left: 8px;
 }
