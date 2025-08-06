@@ -42,7 +42,7 @@ img{
     border-bottom: 2px solid #E9E8E9;
 }
 .header-search-container{
-    width: 45%;
+    width: 50%;
 }
 .header-search-label{
     display: flex;
@@ -152,10 +152,9 @@ img{
 }
 .side-nav-item{
     width: 100%;
-    padding: 1.2em 1em;
+    padding: 1.5em 2em;
     color: #878a8a;
     font-size: .9rem;
-
 }
 .side-nav-item:hover{
     background-color: hsl(211, 66%, 90%);
@@ -194,7 +193,7 @@ img{
 .message-list-item-avatar.active{
     background-color: hsl(211, 66%, 90%);
     color: hsl(211, 66%, 40%);
-    padding: .5em;
+    padding: .8em;
     font-size: .9rem;
     font-weight: bold;
     border-radius: 50%;
@@ -258,7 +257,6 @@ img{
     background-color: hsl(211, 66%, 90%);
     cursor: pointer;
 }
-
 .search-label{
     display: flex;
     align-items: center;
@@ -284,7 +282,6 @@ img{
 .message-search-actions{
     margin-top: 1em;
 }
-
 .select-container{
     max-width: 400px;
 }
@@ -392,7 +389,10 @@ img{
 .chat-message-actions i:hover{
     cursor: pointer;
 }
-
+.chat-message-container{
+    width: 100%;
+    overflow-y: scroll;
+}
 /*Chat message window*/
 .chat-message-time{
     font-size: .9rem;
@@ -501,4 +501,12 @@ input[type="text"] {
     outline: none;
     background: transparent;
 }
+
+/* Utils */
+.scrollable{
+    height:  50vh;
+    overflow-x:hidden;
+    overflow-y: auto
+}
+
 
