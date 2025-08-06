@@ -31,14 +31,14 @@ a{
 }
 
 .btn{
-    border-right:1px solid darkgrey;
+    border-right:2px solid darkgrey;
     padding: .2em .5em;
 }
 .btn:last-child{
     border-right: none;
 }
 .btn.active{
-    background-color: rgba(156, 151, 151, 0.3);
+    background: linear-gradient(to bottom, grey, lightgray);
 }
 .calendar-btn{
     border: 1px solid #7a7979;
@@ -100,9 +100,10 @@ a{
                     45deg,
                     rgba(224, 222, 243, 0.5),
                     rgba(246, 246, 250, 0.23) 4px,
-                    transparent 2px,
+                    transparent 4px,
                     transparent 6px
-            )
+            );
+    color:gray;
             /*repeating-linear-gradient(*/
             /*        -45deg,*/
             /*        rgba(0, 0, 0, 0.05),*/
@@ -113,4 +114,5 @@ a{
 }
 .day.background{
     background-color: rgba(226, 232, 248, 0.45);
+    color: grey;
 }
